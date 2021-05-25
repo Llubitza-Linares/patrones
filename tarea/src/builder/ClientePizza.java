@@ -1,15 +1,8 @@
-package abstractFactory;
-
-import builder.Dueno;
-import builder.Pizza;
-import builder.PizzaCarnivora;
-import builder.PizzaClasica;
-import builder.PizzaHawaina;
+package builder;
 
 public class ClientePizza {
-
 	public static void main(String[] args) {
-	
+		
 		Dueno jose=new Dueno();
 		 PizzaCarnivora pizzaCarnivora = new PizzaCarnivora();
 	        PizzaHawaina pizzaHawaiana = new PizzaHawaina();
@@ -29,6 +22,5 @@ public class ClientePizza {
 	        jose.hornearPizza();
 	        Pizza pizzaClasica1 = jose.getPizza();
 	        pizzaClasica1.showData();
-	
 	}
 }
