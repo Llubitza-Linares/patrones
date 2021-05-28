@@ -1,25 +1,24 @@
 package empresaSoftware;
 
+import java.util.Stack;
+
 public class Empresa4 implements IEmpresa{
 
-	private String [] nombres;
-	private int position;
-	
-	public Empresa4() {
-		position=0;
-		nombres=new String[5];
-	}
-	
-	public void add(String value) {
-		nombres[position]=value;
-		position++;
-	}
+	  private Stack<String> empleados;
 
-	@Override
-	public IteratorConcreteEmpresa4 iterator() {
-		return new IteratorConcreteEmpresa4(this.nombres);
-	}
 
+	    public Empresa4(){
+	        empleados= new Stack<>();
+	    }
+	     public void add(String value){
+	         empleados.push(value);
+	     }
+
+	    @Override
+	    public IteratorConcreteEmpresa4 iterator() {
+	        return new IteratorConcreteEmpresa4(this.empleados);
+	    }
+	
 
 
 }

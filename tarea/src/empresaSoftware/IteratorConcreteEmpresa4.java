@@ -1,11 +1,13 @@
 package empresaSoftware;
 
+import java.util.Stack;
+
 public class IteratorConcreteEmpresa4 implements Iterator{
 	private String [] nombres;
 	private int position;
 	
-	public IteratorConcreteEmpresa4(String[] nombres) {
-		this.nombres=nombres;
+	public IteratorConcreteEmpresa4(Stack<String> empleados) {
+		
 	}
 	
 	@Override
